@@ -1,3 +1,4 @@
+import random
 # Numpy [Python]
 # Ejercicios de profundización
 
@@ -32,5 +33,9 @@ if __name__ == '__main__':
     print('Comenzamos a divertirnos!')
     # A partir de aquí escriba el código que resuelve el enunciado
     # Leer el enunciado con atención y consultar cualquier duda
+    # personal_1_10 = [x for x in accesos if (x < 11 and x > 0)]
+    lista_nros_aleatorios = []
+    lista_nros_aleatorios = [random.randint(1, 10) for x in range(3)]
+    suma = [print('Ud ha perdido') if sum(lista_nros_aleatorios) > 21 else print('La suma y los nros son: ', sum(lista_nros_aleatorios), lista_nros_aleatorios)]
 
     print("terminamos")
